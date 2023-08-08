@@ -37,9 +37,8 @@ if ($conexao->connect_error){
     echo "Parabéns, você conseguiu conectar na base: ".$banco;
 }
 
-
-//$sql = "SELECT * FROM usuário WHERE Código = 1"; // Realizar busca no banco de dados
-
+// Pular/Quebrar uma linha
+echo '<br><br>';
 
 // Inserir dados na tabela do banco de dados
 
@@ -48,6 +47,15 @@ $sql = "INSERT INTO usuário VALUES ('$codigo','$nome')";
 // Executa comando na query
 $resultado = $conexao->query($sql);
 
-// $linha = 
+// Realizar busca no banco de dados
+$sql = "SELECT * FROM usuário WHERE Código = 1";
+
+// Executa o comando na query
+$resultado = $conexao->query($sql);
+
+// Executa e associa a busca no banco de dados
+$linha = $resultado->fetch_assoc();
+
+var_dump ($linha);
 
 ?> 
