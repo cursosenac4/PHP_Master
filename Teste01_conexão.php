@@ -1,4 +1,15 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Banco de dados - Usuário</title>
+</head>
+<body>
+    
+</body>
+</html>
 
 <?php 
 
@@ -8,6 +19,8 @@ $host = 'localhost';
 $usuario = 'root';
 $senha = '';
 $banco = 'db_teste2';
+
+// Criação de variaveis para inserção de dados no banco
 $codigo = '1';
 $nome = 'Vitor';
 
@@ -24,8 +37,8 @@ if ($conexao->connect_error){
     echo "Parabéns, você conseguiu conectar na base: ".$banco;
 }
 
-//$sql = "SELECT * FROM usuário WHERE Código = 1";
 
+//$sql = "SELECT * FROM usuário WHERE Código = 1"; // Realizar busca no banco de dados
 
 
 // Inserir dados na tabela do banco de dados
@@ -34,5 +47,7 @@ $sql = "INSERT INTO usuário VALUES ('$codigo','$nome')";
 
 // Executa comando na query
 $resultado = $conexao->query($sql);
+
+// $linha = 
 
 ?> 
