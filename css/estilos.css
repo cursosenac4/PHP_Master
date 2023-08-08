@@ -2,6 +2,21 @@
  /* Estilização para página inicial do banco de dados */
 /*****************************************************/
 
+/* Corpo principal */
 body {
-    background-color: rgb(0, 238, 255);
+    background-color: rgba(70, 42, 104, 1.00);
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
 }
+
+/* Cabeçalho */
+header {
+    background-color: rgba(109, 65, 161, 1.00);
+    height: 20vh;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
