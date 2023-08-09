@@ -41,4 +41,7 @@ form {
     border: solid 2px white;
 }
 
-/*  */
+/* Identificadores */
+label {
+    border: solid 2px white;
+}
