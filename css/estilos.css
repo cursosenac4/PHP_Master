@@ -13,10 +13,22 @@ body {
 
 /* Cabeçalho */
 header {
+    align-items: center;
+    border: solid 2px white;
     background-color: rgba(109, 65, 161, 1.00);
+    display: flex;
     height: 20vh;
     margin: 0px;
     padding: 0px;
+    text-align: center;
     width: 100vw;
+}
+
+/* Navegação */
+nav {
+    align-items: center;
+    border: solid 2px white;
+    text-align: center;
+
 }
 

@@ -10,7 +10,8 @@
 <body>
     <header>
         <nav>
-
+            <input type="number">
+            <input type="text">
         </nav>
     </header>
     
@@ -76,10 +77,10 @@ $nome = $linha['nome'];
 $idade = $linha['idade'];
 $sexo = $linha['sexo'];
 
-echo $nome," ";
-//echo '<br><br>';
-echo $idade," ";
-//echo '<br><br>';
-echo $sexo," ";
+echo "Nome: ",$nome," ";
+echo '<br>';
+echo "Idade: ",$idade," ";
+echo '<br>';
+echo "Sexo: ",$sexo," ";
 
 ?> 
