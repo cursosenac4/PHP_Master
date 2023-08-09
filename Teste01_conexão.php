@@ -55,15 +55,15 @@ $sql = "INSERT INTO usuário VALUES ('$codigo','$nome')";
 $resultado = $conexao->query($sql);
 
 // Realizar busca no banco de dados
-$sql = "SELECT * FROM usuário WHERE Código = 1";
+//******$sql = "SELECT * FROM usuário WHERE Código = 1";
 
 // Executa o comando na query
-$resultado = $conexao->query($sql);
+//******$resultado = $conexao->query($sql);
 
 // Executa e associa a busca no banco de dados
-$linha = $resultado->fetch_assoc();
+/******$linha = $resultado->fetch_assoc();
 
-var_dump ($linha);
+var_dump ($linha);*/
 
 // Seleção dos dados da tabela cliente
 $sql = "SELECT nome, idade, sexo FROM cliente WHERE codcli = 1";
@@ -76,10 +76,10 @@ $nome = $linha['nome'];
 $idade = $linha['idade'];
 $sexo = $linha['sexo'];
 
-echo $nome;
-echo '<br><br>';
-echo $idade;
-echo '<br><br>';
-echo $sexo;
+echo $nome," ";
+//echo '<br><br>';
+echo $idade," ";
+//echo '<br><br>';
+echo $sexo," ";
 
 ?> 
