@@ -39,7 +39,7 @@ nav {
 /* Formulário */
 form {
     align-items: center;
-    border: solid 2px white;
+    /*border: solid 2px white;*/
     display: flex;
     justify-content: center;
     text-align: center;
@@ -57,13 +57,28 @@ label {
     height: 5vh;
 }
 
-/* Entrada de dados */
+/* Entrada de dados depois do label*/
+label input {
+    align-items: center;
+    display: flex;
+    margin: 7px 0px 0px 0px;
+    padding: 0;
+}
+
+/* Entrada de dados fora do label */
 input {
     align-items: center;
     display: flex;
-    margin: 0;
+    justify-content: center;
     padding: 0;
+    margin: 7px 0px 0px 10px;
 }
+
+
+
+
+
+
 
 
 

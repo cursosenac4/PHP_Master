@@ -12,7 +12,7 @@
         <nav>
             <form action="" method="POST">
             <label>Nome:<input type="text" name="nome"></label>
-            <label>Idade:<input type="text" name="nome"></label>
+            <label>Idade:<input type="text" name="idade"></label>
             <input type="submit" class="submit" value="Inserir">
             </form>
         </nav>
@@ -21,6 +21,7 @@
 </html>
 
 <?php 
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 // Criação de variaveis para conexão com o banco de dados
 
@@ -93,4 +94,13 @@ $novaIdade = $_POST['idade'];
 // Consulta SQL para inserir um novo registro
 $sqlInserir = "INSERT INTO usuário(nome, idade) VALUES ('$novoNome','$novaIdade')";
 
+if($conexao->query($sqlInserir) === TRUE){
+    echo "Novo registro inserido com sucesso!";
+} else {
+    echo "Erro ao inserir novo registro!";
+}
+
+
+
+}
 ?> 
