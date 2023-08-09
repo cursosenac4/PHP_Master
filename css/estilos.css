@@ -14,7 +14,7 @@ body {
 /* Cabeçalho */
 header {
     align-items: center;
-    border: solid 2px white;
+    /*border: solid 2px white;*/
     background-color: rgba(109, 65, 161, 1.00);
     display: flex;
     height: 20vh;
@@ -28,7 +28,7 @@ header {
 /* Navegação */
 nav {
     align-items: center;
-    border: solid 2px white;
+    /*border: solid 2px white;*/
     display: flex;
     margin: 0;
     padding: 0;
@@ -38,10 +38,55 @@ nav {
 
 /* Formulário */
 form {
+    align-items: center;
     border: solid 2px white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 5vh;
 }
 
 /* Identificadores */
 label {
-    border: solid 2px white;
+    display: flex;
+    align-items: center;
+    /*border: solid 2px white;*/
+    justify-content: center;
+    margin: 0px 0px 0px 30px;
+    padding: 0;
+    height: 5vh;
 }
+
+/* Entrada de dados */
+input {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Estiliza a barra de rolagem */
+/* Largura e altura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Cor do fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilo do botão de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+  
+  /* Estilo do botão de rolagem ao passar o mouse */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  

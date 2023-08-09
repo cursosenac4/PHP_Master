@@ -84,6 +84,13 @@ echo "Idade: ",$idade," ";
 echo '<br>';
 echo "Sexo: ",$sexo," ";
 
+// 09/08/2023
 
+// Receber valores do formulário
+$novoNome = $_POST['nome'];
+$novaIdade = $_POST['idade'];
+
+// Consulta SQL para inserir um novo registro
+$sqlInserir = "INSERT INTO usuário(nome, idade) VALUES ('$novoNome','$novaIdade')";
 
 ?> 
