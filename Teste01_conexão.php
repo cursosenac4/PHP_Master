@@ -12,6 +12,7 @@
         <nav>
             <input type="number">
             <input type="text">
+            <input type="submit" class="submit">
         </nav>
     </header>
     
@@ -66,7 +67,7 @@ $resultado = $conexao->query($sql);
 
 var_dump ($linha);*/
 
-// Seleção dos dados da tabela cliente
+// Seleção dos dados da tabela cliente - Código 1 do cliente
 $sql = "SELECT nome, idade, sexo FROM cliente WHERE codcli = 1";
 
 $resultado = $conexao->query($sql);
@@ -82,5 +83,7 @@ echo '<br>';
 echo "Idade: ",$idade," ";
 echo '<br>';
 echo "Sexo: ",$sexo," ";
+
+
 
 ?> 
