@@ -16,9 +16,7 @@
             <input type="submit" class="submit" value="Inserir">
             </form>
         </nav>
-    </header>
-    
-    
+    </header>    
 </body>
 </html>
 
