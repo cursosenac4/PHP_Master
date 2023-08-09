@@ -36,3 +36,7 @@ nav {
 
 }
 
+/* Formulário */
+form {
+    border: solid 2px white;
+}

@@ -10,9 +10,11 @@
 <body>
     <header>
         <nav>
-            <input type="number">
-            <input type="text">
-            <input type="submit" class="submit">
+            <form action="" method="POST">
+            <label>Nome:<input type="text" name="nome"></label>
+            <label>Idade:<input type="text" name="nome"></label>
+            <input type="submit" class="submit" value="Inserir">
+            </form>
         </nav>
     </header>
     
