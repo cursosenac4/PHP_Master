@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-            
+
         </nav>
     </header>
     
@@ -64,5 +64,22 @@ $resultado = $conexao->query($sql);
 $linha = $resultado->fetch_assoc();
 
 var_dump ($linha);
+
+// Seleção dos dados da tabela cliente
+$sql = "SELECT nome, idade, sexo FROM cliente WHERE codcli = 1";
+
+$resultado = $conexao->query($sql);
+echo '<br><br>';
+
+$linha = $resultado->fetch_assoc();
+$nome = $linha['nome'];
+$idade = $linha['idade'];
+$sexo = $linha['sexo'];
+
+echo $nome;
+echo '<br><br>';
+echo $idade;
+echo '<br><br>';
+echo $sexo;
 
 ?> 
