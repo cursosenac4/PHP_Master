@@ -30,13 +30,15 @@ nav {
     align-items: center;
     /*border: solid 2px white;*/
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     text-align: center;
+    width: 100vw;
 
 }
 
-/* Formulário */
+/* Formulário 01 */
 form {
     align-items: center;
     /*border: solid 2px white;*/
@@ -44,7 +46,19 @@ form {
     justify-content: center;
     text-align: center;
     height: 5vh;
+    width: 80vw;
 }
+
+/* Formulário 02 */
+/*fom2 form {
+    align-items: center;
+    border: solid 2px white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 5vh;
+    width: 80vw;
+}*/
 
 /* Identificadores */
 label {
