@@ -83,7 +83,7 @@ echo "Nome: ",$nome," ";
 echo '<br>';
 echo "Idade: ",$idade," ";
 echo '<br>';
-echo "Sexo: ",$sexo," ";
+//echo "Sexo: ",$sexo," ";
 
 // 09/08/2023
 
@@ -102,5 +102,16 @@ if($conexao->query($sqlInserir) === TRUE){
 
 
 
+
+
+
+
+
+
+
+
+
+}else {
+    echo "Pagina foi atualizada!";
 }
 ?> 
