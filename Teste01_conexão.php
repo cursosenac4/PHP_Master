@@ -10,10 +10,18 @@
 <body>
     <header>
         <nav>
+            <div class="form1">
             <form action="" method="POST">
             <label>Nome:<input type="text" name="nome"></label>
             <label>Idade:<input type="text" name="idade"></label>
             <input type="submit" class="submit" value="Inserir">
+            </form>
+            </div>
+            <div class="form2">
+            <form action="" method="POST">
+            <label>Código do usuário:<input type="text" name="nome"></label>            
+            <input type="submit" class="submit" value="Inserir">
+            </div>
             </form>
         </nav>
     </header>    
@@ -88,6 +96,10 @@ echo '<br>';
 // 09/08/2023
 
 // Receber valores do formulário
+if(isset($_POST['nome'])&& isset($_POST['idade'])){
+
+
+// Receber valores do formulário
 $novoNome = $_POST['nome'];
 $novaIdade = $_POST['idade'];
 
@@ -100,7 +112,21 @@ if($conexao->query($sqlInserir) === TRUE){
     echo "Erro ao inserir novo registro!";
 }
 
+}
 
+// Consulta SQL para excluir registro
+
+if(isset($_POST['id_excluir'])){
+    $idExcluir = $_POST['id_exluir'];
+    echo $idExcluir;
+    $sqlExcluir = "DELETE FROM usuário WHERE código = $idExcluir";
+
+    if($conexao->query($sqlExcluir) === TRUE) {
+        echo "Registro Excluído com sucesso!";
+    } else {
+        echo "Erro ao excluír o registro!".$conexao->error;
+    }
+}
 
 
 
