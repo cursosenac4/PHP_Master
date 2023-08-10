@@ -19,8 +19,8 @@
             </div>
             <div class="form2">
             <form action="" method="POST">
-            <label>Código do usuário:<input type="text" name="nome"></label>            
-            <input type="submit" class="submit" value="Inserir">
+            <label>Código do usuário:<input type="text" name="id_exluir"></label>            
+            <input type="submit" class="submit" value="Excluír">
             </div>
             </form>
         </nav>
